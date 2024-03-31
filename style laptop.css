@@ -1,0 +1,301 @@
+@media (min-width: 769px) and (max-width: 1279px) {
+    
+    :root {
+    --color-blue: rgb(42, 35, 103);
+    --color-lightBlue: rgb(107, 90, 249);
+    --color-gold: rgb(240, 213, 119);
+    --color-gray: rgb(159, 159, 159);
+    --color-white: rgb(255, 255, 255);
+    --color-green: rgb(67, 205, 147);
+    --color-under: rgb(235, 235, 235);
+    --color-block: rgba(42, 35, 103, 0.15);
+    --color-callBack:rgb(244, 248, 255);
+    --color-callBackForm: rgb(107, 90, 249);
+    --color-chekbox: rgb(155, 143, 255);
+    --color-popup: rgba(163, 161, 161, 0.85);
+    --color-order_a_call: rgb(152, 149, 180);
+    --color-order_a_call__name: rgb(126, 126, 126);
+
+    }
+    
+    body {
+    display: grid;
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(255, 255, 255);
+    justify-content: center;
+   }
+
+   .order_a_call__form, .popup_menu{
+    display: none;
+   }
+
+   header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    height: 97px;
+    justify-items: center;
+    align-items: center;
+    
+   }
+   
+
+  
+
+   .first-block{
+  
+   }
+   .first_block_position {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+   }
+
+   .first_block_position_1 {
+    display: grid;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-left: 10px;
+    align-content: space-evenly;
+    justify-items: start;
+   }
+
+   
+
+    .heading {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--color-blue);
+        margin-left: 10px;
+        margin-top: 41px;
+   }
+
+
+  .heading span{
+    color: var(--color-lightBlue);
+   }
+
+   .marketing {
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--color-blue);
+        text-align: left;
+   
+    }
+    .marketing span {
+    color: var(--color-lightBlue);
+    font-weight: 700;
+    }
+
+
+  
+
+  
+
+   .first_img {   
+     display: grid;
+     grid-column-start: 2;
+    }
+
+   .price {
+    display: grid;
+    justify-content: center;
+    
+    }
+    
+.price_m {
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.price-button {
+    display: grid;
+    color: white;
+    border: 1px solid var(--color-lightBlue);
+    border-radius: 5px;
+    width: 275px;
+    height: 60px;
+    background-color: var(--color-lightBlue);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.first-block__container {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-blue);
+    
+}
+
+.first-block__container span {
+color: var(--color-lightBlue);
+}
+
+.question {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--color-blue);
+}
+.question span{
+    color: var(--color-lightBlue);
+}
+
+
+
+.content_1, .content_2, .content_3, .content_4{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin-left: 10px;
+}
+
+  .product-catalog, .order_registration, .integration, .CRM {
+    display: grid;
+    row-gap: 17px;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--color-lightBlue);
+    align-content: center
+  }
+
+  .product, .design_options, .integration_options, .CRM_options {
+    display: grid;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-blue);
+    list-style-image: url(img/li.png);
+    row-gap: 10px;
+    padding-left: 16px;
+  }
+
+.orderImg, .crmImg{
+grid-column-start: 2;
+}
+.order_registration, .CRM{
+grid-row-start: 1;
+
+}
+
+
+ .border {
+    margin-top: 80px;
+    margin-bottom: 107px;
+    padding: 19px;
+    background-color: var(--color-gold);
+    border-radius: 10px;
+  }
+
+.gold {
+    display: grid;
+    height: 731px;
+    background-color: var(--color-gold);
+    border-radius: 10px;
+    border: 1px solid white;
+    align-content: space-between;
+
+}
+.slideBG {
+    background-color: var(--color-gold);
+
+}
+
+.trophyImg {
+display: grid;
+margin-bottom: 19px;
+}
+
+    .trophy {
+        display: grid;
+        justify-items: center;
+        margin-top: 38px;
+        
+    }
+   
+   .sertif {
+    display: grid;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-gray);
+    margin-bottom: 6px;
+    }
+
+
+    .sertifparner{
+        display: grid;
+        width: 212px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--color-blue);
+        margin-bottom: 24px;
+    }
+
+    .swiper-slide_bk {
+        background-color: var(--color-gold);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item {
+	opacity: 1;
+	transition: opacity 5s;
+	padding-left: 15px;
+	width: 340px;
+	height: 200px;
+	border-radius: 10px;
+	gap: 10px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+	align-content: center;
+}
+
+ .item  li {
+	list-style: none;
+    margin-bottom: 10px
+}
+
+.number {
+	display: grid;
+	font-size: 64px;
+	font-weight: 800;
+	line-height: 78px;
+	color: white;
+	text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.under-line {
+	border-bottom: 2px solid rgb(227, 117, 117);
+	width: 175px;
+}
+
+.slide-name {
+	display: grid;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 17px;
+	color: rgb(42, 35, 103);
+}
+
+.slide-text {
+	display: grid;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+}
+
+.slide-number {
+	display: grid;
+	grid-template-columns: 12px 12px 12px 12px 12px 12px;
+	column-gap: 12px;
+}
+
+
+}
