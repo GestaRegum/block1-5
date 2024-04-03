@@ -22,7 +22,7 @@
         display: grid;
         font-family: 'Montserrat', sans-serif;
         background-color: var(--color-white);
-        justify-items: stretch;
+        justify-items: center;
     }
 
 
