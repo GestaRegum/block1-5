@@ -9,7 +9,7 @@
  *
  * Released on: February 27, 2024
  */
- @media (max-width: 768px) {
+ 
 
 
 :root {
@@ -653,5 +653,4 @@ button.swiper-pagination-bullet {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
-}
 }

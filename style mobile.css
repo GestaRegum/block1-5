@@ -21,9 +21,8 @@
     body {
     display: grid;
 	font-family: 'Montserrat', sans-serif;
-	background-color: rgb(255, 255, 255);
-    justify-content: center;
-    max-width: 768px;
+	background-color: var(--color-white);
+   
 
 }
 
@@ -34,12 +33,7 @@
 
 
 
-    .backimg {
-        background-image: url("img/background_img_first.png");
-        background-repeat: no-repeat;
-        background-position: center 74px;
-    } 
-
+   
 .close {
     display: none;
 }
@@ -79,6 +73,11 @@
     display: block;
     width: 0;
     visibility: hidden;
+    }
+    .burger_menu {
+        position: absolute;
+    margin-top: -78px;
+    margin-left: -153px;
     }
   
 	
@@ -125,6 +124,10 @@ padding-top: 28px;}
 		display: none;
 		
 	}
+
+    .intShop {
+    display: none;
+    }
 
 
     .order_a_call__form {
@@ -556,6 +559,10 @@ margin-bottom: 19px;
         text-align: center;
     }
 
+     .callback__description p span {
+    font-weight: 600;
+        }
+
   .form__callBack {
   background-color: var(--color-callBackForm);
   border-radius: 20px;
@@ -608,6 +615,7 @@ margin-bottom: 19px;
        display: grid;
     
     border: none;
+    border-radius: 5px;
     align-content: center;
     width: 268px;
     height: 60px;
@@ -651,21 +659,27 @@ margin-left: 40px;
 }
 
 .cube {
-
+transform: translate(360px, -50px);
 }
 
 .cylinder {
- 
+ transform: translate(284px, -754px);
 }
 
 .purpleInBasic {
-   
+    transform: translate(-200px, 20px);
+
 }
 
 .platonic {
-
-
+ transform: translate(-20px, -880px);
 }
+
+.donut {
+ transform: translate(-50px, -375px);
+}
+
+
 
 .footer {
     display: grid;
@@ -673,6 +687,15 @@ margin-left: 40px;
     row-gap: 40px;
 
 }
+
+.emailAndOrder {
+display: grid;
+    row-gap: 30px;
+
+
+}
+
+
 .email {
 
     display: grid;
@@ -712,6 +735,13 @@ color: var(--color-lightBlue);
     text-decoration: none;
 }
 
+
+.footer_inform {
+    display: grid;
+    justify-content: center;
+    row-gap: 25px;
+    }
+
 .messenger {
 text-align: center;
 }
@@ -741,12 +771,14 @@ display: grid;
 color: var(--color-white);
 font-size: 14px;
 font-weight: 700;
+text-align: center;
 
 }
 
 
 .footer__logo {
 display: grid;
+justify-content: center
 }
 
 .footer__copyright {

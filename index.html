@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="swipercss.css">
     <link rel="stylesheet" href="style mobile.css" />
     <link rel="stylesheet" href="style laptop.css">
+    <link rel="stylesheet" href="style desktop.css">
 
 
     <title>Блок 1-5</title>
@@ -22,44 +23,52 @@
     <header>
         <a href="#" class="menu_close "><img src="img/menu.png" alt="меню"></a>
         <div class="logo"><a href="#"><img src="img/Logo.png"
-        srcset="img/Logo.png 114w,
-        imgLaptop/logoLT.png 178w"
-        sizes="(max-width: 768px) 114px,
-        (max-width: 1279px) 178px"
-         alt="логотип"></a></div>
-        <a href="#"><img
-        src="img/phone.png"
-         srcset="img/phone.png 52w,
-        imgLaptop/phoneLT.png 62w"
-        sizes="(max-width: 768px) 52px,
-        (max-width: 1279px) 62px" alt=""></a>
+                    srcset="img/Logo.png 114w,
+                    imgLaptop/logoLT.png 178w,
+                    imgDesktop/logoDT.png 182w"
+                    sizes="(max-width: 768px) 114px,
+                    (max-width: 1279px) 178px,
+                    (min-width: 1280px) 182px" 
+                    alt="логотип"></a></div>
+        <div class="phone"><a href="#"><img
+                    src="img/phone.png"
+                    srcset="img/phone.png 52w,
+                    imgLaptop/phoneLT.png 62w"
+                    sizes="(max-width: 768px) 52px,
+                    (max-width: 1279px) 62px" alt=""></a></div>
 
 
-        <div class="popup_menu close"><a class="menu-block" href="#"> <img class="burger_menu" src="img/popup_menu.png" alt="menu"> </a>
+        <div class="popup_menu close"><a class="menu__list_teg" href="#"> <img class="burger_menu" src="img/popup_menu.png" alt="menu"> </a>
 				          
                 <ul class="menu__list">
                     <li class="x"><a href="#"><img src="img/x.png" alt=""></a></li>
                     <li class="hover__menu"><a href="#">Главная</a></li>
-                    <li class="hover__menu"><a href="#">Интернет-магазины,
+                    <li class="hover__menu"><a href="#internetShop">Интернет-магазины,
                          которые продают</a></li>
-                    <li class="hover__menu"><a href="#">Что вы получаете</a></li>
-                    <li class="hover__menu"><a href="#">Контакты</a></li>
-                    <li class="hover__menu"><a href="#">Исследуем бизнес</a></li>
-                    <li class="hover__menu"><a href="#">Этапы</a></li>
+                    <li class="hover__menu"><a href="#what_do_you_get">Что вы получаете</a></li>
+                    <li class="hover__menu"><a href="#contacts">Контакты</a></li>
+                    <li class="hover__menu"><a href="#exploring_the_business">Исследуем бизнес</a></li>
+                    <li class="hover__menu"><a href="#stages">Этапы</a></li>
                     <li class="hover__menu"><a href="#">Обратная связь</a></li>
                     <div class="popup_inform">
                     <li class="contact"><a href="#">info@millenium.ru</a></li>
                     <li class="contact"><a href="#">+7 (495) 792-66-69
-                        пн-пт 10:00–19:00</a></li>
+                        <span>пн-пт 10:00–19:00</span> </a></li>
                     </div>
-                   
-                    
-                    </ul>
+                </ul>
                 
         </div>
 
 
-        <div class="order_a_call__form">
+        <div class="social close"><a href="#"><img src="imgDesktop/telegram.png" alt=""></a>
+             <a href="#"><img src="imgDesktop/whatsapp.png" alt=""></a>
+        
+        </div>
+
+
+        <div class="feedback_call close"> <a class="feedback_call__button" href="#">Заказать звонок</a> </div>
+
+        <div class="order_a_call__form close">
         <div class="order_a_call__title">Заявка на консультацию</div>
 
         <label class="order_a_call__data">
@@ -92,9 +101,11 @@
 <div class="heading">Разработка интернет-магазинов <span>на 1C-Битрикс</span></div>
 <div class="first_block_position"><div class="first_img"><img src="img/background_img_first.png"
                             srcset="img/background_img_first.png 447w,
-                            imgLaptop/bk_laptop.png 569w"
+                            imgLaptop/bk_laptop.png 569w,
+                            imgDesktop/bk_desktop.png 855w"
                             sizes="(max-width: 768px) 447px,
-                            (max-width: 1279px) 569px"
+                            (max-width: 1279px) 500px,
+                            (min-width: 1280px) 700px"
  alt=""></div>
 
 <div class="first_block_position_1"><div class="marketing">Разработаем интернет-магазин за 30 дней с уникальным дизайном и продуманной структурой который <span>выделит вас на фоне конкурентов</span></div>
@@ -106,6 +117,9 @@
 </div></div>
 
 </div>
+
+
+<div class="intShop" id="internetShop">Мы создаем интернет-магазины,<span> которые продают</span></div>
 
 <div class="swiper">
     <!-- Additional required wrapper -->
@@ -173,9 +187,15 @@
 
 <div class="price_m"> <a class="price-button" href="#">Узнать стоимость</a> </div>
 
-<div class="question"> Что вы <span>получаете ?</span></div>
+<div class="question" id="what_do_you_get"> Что вы <span>получаете ?</span></div>
 
-<div class="content_1"><div class="questionImg"><img src="img/What_will_you_get.png" alt="телефон с сердечком"></div>
+<div class="content_1"><div class="questionImg"><img src="img/What_will_you_get.png"
+                            srcset="img/What_will_you_get.png 368w,
+                                    imgDesktop/What_will_you_get_DT.png 518w"
+                            sizes="(max-width: 1279px) 340px,
+                                    (min-width: 1280px) 518px"
+ alt="телефон с сердечком"></div>
+
 
 <div class="product-catalog"> Католог товаров
 <ul class="product">
@@ -188,7 +208,13 @@
 </div>
 
 
-<div class="content_2"><div class="orderImg"><img src="img/order.png" alt="человек перед телефоном оформляет заказ"></div>
+<div class="content_2"><div class="orderImg"><img src="img/order.png"
+                                srcset="img/order.png 368w,
+                                    imgDesktop/order_DT.png 525w"
+                                sizes="(max-width: 1279px) 340px,
+                                    (min-width: 1280px) 518px"
+
+ alt="человек перед телефоном оформляет заказ"></div>
 
 <div class="order_registration"> Оформление заказа
 <ul class="design_options">
@@ -202,7 +228,14 @@
 </div>
 
 
-<div class="content_3"><div class="integrationImg"><img src="img/integration.png" alt="человек сидит на мониторе сверху"></div>
+<div class="content_3"><div class="integrationImg"><img src="img/integration.png"
+                                    srcset="img/integration.png 368w,
+                                    imgDesktop/integration_DT.png 525w"
+                                    sizes="(max-width: 1279px) 340px,
+                                    (min-width: 1280px) 518px"
+ alt="человек сидит на мониторе сверху"></div>
+
+
 <div class="integration"> Оформление заказа
 <ul class="integration_options">
 <li>1С, Мой склад (выгрузка товаров на сайт, полная синхронизация)</li>
@@ -212,7 +245,12 @@
 </div>
 </div>
 
-<div class="content_4"><div class="crmImg"><img src="img/CRM.png" alt="люди вокруг ноутбука занимаются работой"></div>
+<div class="content_4"><div class="crmImg"><img src="img/CRM.png"
+                                    srcset="img/CRM.png 368w,
+                                    imgDesktop/CRM_DT.png 525w"
+                                    sizes="(max-width: 1279px) 340px,
+                                    (min-width: 1280px) 518px"
+ alt="люди вокруг ноутбука занимаются работой"></div>
 
 <div class="CRM"> CRM
 <ul class="CRM_options">
@@ -253,7 +291,9 @@
     </div>                 
 </div>
             
+<div class="bisnesExp" id="exploring_the_business">
 <div class="bisnes">Исследуем <span>бизнес</span></div>
+
 <div class="bisnes_conteiner">
 <p>Каждый клиент – своя история. Мы не берем шаблонные решения,
  а исследуем рынок конкретно под ваши цели и задачи. </p>
@@ -272,10 +312,19 @@
  интуитивно понятен для заказчика.</p>
 </div>
 
-<div class="bisnesImg"><img src="img/bisnes.png" alt=""></div>
+
+<div class="bisnesImg"><img src="img/bisnes.png"
+                                srcset="img/bisnes.png 370w,
+                                    imgDesktop/bisnes_DT.png 667w"
+                                sizes="(max-width: 1279px) 340px,
+                                    (min-width: 1280px) 650px"
+
+ alt=""></div>
+</div>
+
 
 <div class="second_block">
-<p class="second_block_title">Этапы</p>
+<p class="second_block_title" id="stages">Этапы</p>
 
 <div class="stages">
     
@@ -294,7 +343,14 @@
             наполнению с учетом требований SEO, разрабатываем план по внешней и
             внутренней оптимизации сайта. Также мы создаем набор готовых элементов
             для пользовательского интерфейса.</p>
-              <div class="stageImg"><img src="img/stage_1.png" alt=""></div>
+              <div class="stageImg"><img src="img/stage_1.png"
+                                            srcset="img/stage_1.png 301w,
+                                            imgLaptop/stage_1_LT.png 591w,
+                                            imgDesktop/stage_1_DT.png 1042w"
+                                            sizes="(max-width: 768px) 301px,
+                                            (max-width: 1279px) 591px,
+                                            (min-width: 1280px) 1040px"
+                                             alt=""></div>
     </div>
     
 </div>
@@ -314,7 +370,14 @@
                     <p>Мы подберем оптимальные цветовые сочетания (основной, дополнительные,
                      акцентные цвета), уделим внимание четкости графики, наглядности
                       интерфейса, понятной и лаконичной визуализации.</p>
-              <div class="stageImg"><img src="img/stage_2.png" alt=""></div>
+              <div class="stageImg"><img src="img/stage_2.png"
+                                            srcset="img/stage_2.png 301w,
+                                            imgLaptop/stage_2_LT.png 613w,
+                                            imgDesktop/stage_2_DT.png 1042w"
+                                            sizes="(max-width: 768px) 301px,
+                                            (max-width: 1279px) 613px,
+                                            (min-width: 1280px) 1040px"
+                                            alt=""></div>
     </div>
     
 </div>
@@ -335,7 +398,15 @@
                         <p>Профессиональная адаптивная верстка является
                         важным условием бесперебойной надежной работы сайта на протяжении
                     длительного времени. </p>
-              <div class="stageImg"><img src="img/stage_3.png" alt=""></div>
+              <div class="stageImg"><img src="img/stage_3.png" 
+                                            srcset="img/stage_3.png 313w,
+                                            imgLaptop/stage_3_LT.png 622w,
+                                            imgDesktop/stage_3_DT.png 1042w"
+                                            sizes="(max-width: 768px) 313px,
+                                            (max-width: 1279px) 622px,
+                                            (min-width: 1280px) 1040px"
+              
+              alt=""></div>
     </div>
     
 </div>
@@ -357,7 +428,14 @@
        управляете содержимым — редактируете новости, вносите коррективы в 
        товары, добавляет фото и видеоконтент, модерируете и выполняете множество
         других действий, которые без CMS были бы сущим кошмаром.</p>
-              <div class="stageImg"><img src="img/stage_4.png" alt=""></div>
+              <div class="stageImg"><img src="img/stage_4.png"
+                                            srcset="img/stage_4.png 314w,
+                                            imgLaptop/stage_4_LT.png 622w,
+                                            imgDesktop/stage_4_DT.png 1042w"
+                                            sizes="(max-width: 768px) 314px,
+                                            (max-width: 1279px) 622px,
+                                            (min-width: 1280px) 1040px"
+                                             alt=""></div>
     </div>
     
 </div>
@@ -399,14 +477,14 @@
     
 </div>
 </div>
-<div>
-<div class="office"></div>
-</div>
 
-<div class="callback"> <p class="callback_title">Компания Millenium-</p>
+<div class="office"></div>
+
+
+<div class="callback" id="contacts"> <div><p class="callback_title">Компания Millenium-</p>
 <div class="callback__description">
 <p>Это дорогая и долгая разработка интернет-магазинов на 1С
- Битрикс! Нельзя сделать качественный цифровой продукт за
+ Битрикс! Нельзя сделать <span> качественный</span> цифровой продукт за
   дешево и быстро!</p>
   <p>Мы создадим интернет-магазин с нуля. Заказчику не придется искать 
   других IT-специалистов для дальнейшей настройки и запуска сайта. Мы 
@@ -414,14 +492,16 @@
    контент и товары. Работы по созданию интернет-магазина с нуля 
    ведутся только после анализа ниши бизнеса.</p>
 </div>
+</div>
 
-<div class="form__callBack">
-               <p class="form__callBack-title">
+
+<div class="form__callBack" id="feedback">
+               <div class="form__callBack-title">
         Звоните нам по телефону
-    +7 (495) 792-66-69</p>
+    +7 (495) 792-66-69</div>
 
-    <p class="callback_text">или закажите обратный звонок чтобы получить ответы на все интересующие
-     вас вопросы.</p>
+    <div class="callback_text">или закажите обратный звонок чтобы получить ответы на все интересующие
+     вас вопросы.</div>
      
      <div class="form_border">
      <form class="form" action="">
@@ -442,45 +522,93 @@
     
     </div>
     
-    <img class="cube" src="img/Cube.png" alt="">
-    <img class="cylinder" src="img/Cylinder.png" alt="">
-    <img class="purpleInBasic" src="img/Purple-in-Basic.png" alt="">
-    <img class="platonic" src="img/Platonic.png" alt="">
+ 
     </div>
 
+    <img class="cube" src="img/Cube.png"
+                        srcset="img/Cube.png 91w,
+                                            imgLaptop/Cube_LT.png 119w,
+                                            imgDesktop/Cube_DT.png 1042w"
+                        sizes="(max-width: 768px) 91px,
+                                            (max-width: 1279px) 119px,
+                                            (min-width: 1280px) 165px" 
+                             alt="">
 
+
+    <img class="cylinder" src="img/Cylinder.png"
+                                        srcset="img/Cylinder.png 103w,
+                                            imgDesktop/Cylinder_DT.png 174w"
+                                            
+                                    sizes="(max-width: 768px) 103px,
+                                            (min-width: 769px) 174px"
+                                            alt="">
+    <img class="purpleInBasic" src="img/Purple-in-Basic.png"
+                                 srcset="img/Purple-in-Basic.png 221w,
+                                            imgLaptop/Purple-in-Basic_LT.png 335w,
+                                            imgDesktop/Purple-in-Basic_DT.png 430w"
+                        sizes="(max-width: 768px) 221px,
+                                            (max-width: 1279px) 335px,
+                                            (min-width: 1280px) 430px" 
+                                             alt="">
+
+
+    <img class="platonic" src="img/Platonic.png" 
+                                srcset="img/Platonic.png 119w,
+                                            imgLaptop/Platonic_LT.png 146w,
+                                            imgDesktop/Platonic_DT.png 146w"
+                        sizes="(max-width: 768px) 119px,
+                                            (max-width: 1279px) 146px,
+                                            (min-width: 1280px) 146px" 
+    
+    alt="">
+
+
+    <img class="donut" src="img/donut.png"
+                        srcset="img/donut.png 42w,
+                         imgDesktop/donut_DT.png 58w"
+                        sizes="(max-width: 1279px) 42px,
+                                (min-width: 1280px) 58px" 
+                                             alt="">
+
+   
 </div>
 
 </main>
 
 <footer class="footer">
+
+<div class="emailAndOrder">
 <div class="email"> 
 Напишите нам <p>info@millenium.ru</p>
 </div>
 
 <div class="order_a_call"> <a class="order_a_call-button" href="#">Заказать звонок</a> </div>
-
+</div>
+<div class="footer_inform">
         <div class="messenger"> 
                 <a href="#"><img src="img/telegram.png" alt=""></a>
                 <a href="#"><img src="img/whatsapp.png" alt=""></a>
         </div>
-        <div class="inform">
+
+
+        
 
                 <div class="address">Москва, ул. Профсоюзная 76, 
             БЦ «ГАЛЕРЕЯ 76» 2 этаж</div>
 
                 <div class="tellAndWorkTime">+7 (495) 792-66-69
                 пн-пт 10:00–19:00</div>
-
+</div>
 
                 <div class="footer__logo"><img src="img/footer logo.png" alt=""></div>
 
 
-
+<div class="inform">
                 <div class="footer__copyright">© 2018–2021 | Millenium - создание интернет-магазинов на 1С Битрикс</div>
 
                 <div class="footer__privacyPolicy"><a href="#">Политика конфиденциальности</a></div>
         </div>
+
 </div>
 
 
