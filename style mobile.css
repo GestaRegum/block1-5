@@ -659,11 +659,11 @@ margin-left: 40px;
 }
 
 .cube {
-transform: translate(360px, -50px);
+transform: translate(338px, -50px);
 }
 
 .cylinder {
- transform: translate(284px, -754px);
+ transform: translate(200px, -754px);
 }
 
 .purpleInBasic {
