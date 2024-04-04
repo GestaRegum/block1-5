@@ -659,24 +659,24 @@ margin-left: 40px;
 }
 
 .cube {
-transform: translate(338px, -50px);
+transform: translate(265px, -50px);
 }
 
 .cylinder {
- transform: translate(200px, -754px);
+ transform: translate(160px, -790px);
 }
 
 .purpleInBasic {
-    transform: translate(-200px, 20px);
+    transform: translate(0px, -95px);
 
 }
 
 .platonic {
- transform: translate(-20px, -880px);
+ transform: translate(-231px, -916px);
 }
 
 .donut {
- transform: translate(-50px, -375px);
+ transform: translate(28px, -410px);
 }
 
 
