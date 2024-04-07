@@ -71,7 +71,7 @@ document.querySelector('.phone').addEventListener("click", function () {
         document.getElementById("main").classList.add("blur");
         document.getElementById("menuList").classList.add("close");
         document.getElementById("menu_button").classList.remove("menu_open");
-
+        bodyTeg.setAttribute('style', 'overflow:none')
 
         
 });
@@ -84,6 +84,7 @@ let removeOrder = document.addEventListener('click', function(e) {
                 
                         document.getElementById("feedback_form").classList.add("close");
                         document.getElementById("main").classList.remove("blur");
+                         bodyTeg.setAttribute('style', 'overflow:none')
                 }
 
 
