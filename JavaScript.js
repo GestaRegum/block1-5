@@ -7,8 +7,15 @@ new Swiper('.swiper',{
 
 
 let menuOpen = document.getElementById("menu_button");
+let menuLinks = document.querySelectorAll('.hover__menu>a');
+let bodyTeg = document.body;
 
-let menuLinks = document.querySelectorAll('.hover__menu');
+let closePopup = function() {
+     document.getElementById("menu_button").classList.remove("menu_open");
+        document.getElementById("menuList").classList.add("close");
+        document.getElementById("main").classList.remove("blur");
+        bodyTeg.setAttribute('style', 'overflow:none')
+};
 
    
 /*Открываем меню*/
@@ -18,16 +25,15 @@ let menuLinks = document.querySelectorAll('.hover__menu');
         document.getElementById("menuList").classList.remove("close");
         document.getElementById("main").classList.add("blur");
         document.getElementById("feedback_form").classList.add("close");
+        bodyTeg.setAttribute('style', 'overflow:hidden')
 
     });
 
+
 /*Закрываем меню нажимая на крестик*/
 document.querySelector('.x').addEventListener("click", function() {
-
-        document.getElementById("menu_button").classList.remove("menu_open");
-        document.getElementById("menuList").classList.add("close");
-        document.getElementById("main").classList.remove("blur");
-       
+closePopup();
+   
 });
 
 
@@ -35,11 +41,11 @@ document.querySelector('.x').addEventListener("click", function() {
 /*Закрываем меню нажимая на Esc*/
 window.addEventListener('keydown', (e) => {
         if (e.key === "Escape") {
-        document.getElementById("menu_button").classList.remove("menu_open");
-        document.getElementById("menuList").classList.add("close");
-        document.getElementById("main").classList.remove("blur");
+                closePopup();
 }
 });
+
+
 
 let removeMenuList = document.addEventListener('click', function(e) {
 
@@ -57,11 +63,7 @@ let removeMenuList = document.addEventListener('click', function(e) {
 
 
 
-
-document.removeEventListener('click', removeMenuList);
-
-
- /*вызываем окно запроса звонка*/
+/*вызываем окно запроса звонка*/
  
 document.querySelector('.phone').addEventListener("click", function () {
 
@@ -69,9 +71,12 @@ document.querySelector('.phone').addEventListener("click", function () {
         document.getElementById("main").classList.add("blur");
         document.getElementById("menuList").classList.add("close");
         document.getElementById("menu_button").classList.remove("menu_open");
+
+
+        
 });
 
-document.addEventListener('click', function(e) {
+let removeOrder = document.addEventListener('click', function(e) {
 
         let callBackForm = document.querySelector('header');
 
@@ -85,17 +90,17 @@ document.addEventListener('click', function(e) {
 });
 
 
-
+document.removeEventListener('click', removeOrder);
 
 
 
 menuLinks.forEach(hover__menu => hover__menu.addEventListener('click', function() {
-        document.getElementById("menu_button").classList.remove("menu_open");
-        document.getElementById("menuList").classList.add("close");
-        document.getElementById("main").classList.remove("blur");
+
+        closePopup();
 
 
 }))
+
 
 
 

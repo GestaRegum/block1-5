@@ -54,7 +54,7 @@
 		background-color: var(--color-white);
 		list-style: none;
 		width: 340px;
-		height: 819px;
+		height: 100vh;
 		z-index: 20;
 		text-align: center;
 		white-space: pre-line;
