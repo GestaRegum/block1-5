@@ -25,7 +25,6 @@
    
 
 }
-
     main {
     display: grid;
     padding: 0 10px;
@@ -33,30 +32,30 @@
 
 
 
-   
-.close {
-    display: none;
-}
+.blur {
+        filter: brightness(0.4) blur(1.5px);
+        background-color: rgba(163, 161, 161, 0.85);
+        opacity: 0.6;
+        }
+
+        .popup_menu {
+        position: absolute;
+        left: 0px;
+        top: 0;
+        }
+
+
+
    .popup_menu .menu__list{
 		
 		position: absolute;
-		top: 65px;
+		top: 45px;
 		left: 0px;
-		text-decoration: none;
 		background-color: var(--color-white);
 		list-style: none;
-		box-shadow: 
-            400px 0px var(--color-popup),
-            800px 0 var(--color-popup),
-            0px 770.5px var(--color-popup),
-            400px 770.5px var(--color-popup),
-            0px 1541px var(--color-popup),
-            400px 1541px var(--color-popup);
-        width: 360px;
-		height: 750px;
-		z-index: 10;
-		margin: 0;
-		padding-top: 21px;
+		width: 340px;
+		height: 819px;
+		z-index: 20;
 		text-align: center;
 		white-space: pre-line;
 	}
@@ -76,8 +75,8 @@
     }
     .burger_menu {
         position: absolute;
-    margin-top: -78px;
-    margin-left: -153px;
+        top: 20px;
+        left: 8px;
     }
   
 	
@@ -87,10 +86,6 @@
 	left: 14px;
 	}
 	
-	.hover__menu:nth-child(2) {
-	margin-top: 40px;
-	}
-    
 	.proba {
 		position: absolute;
 		top: -44.3px;
@@ -99,8 +94,8 @@
 	
 	.popup_inform {
 	position: absolute;
-	bottom: 0px;
-	left: 140px;
+	bottom: 110px;
+    left: 135px;
 	}
 	
 .hover__menu {
@@ -131,18 +126,13 @@ padding-top: 28px;}
 
 
     .order_a_call__form {
-        display: none;
+    display: grid;
         position: absolute;
         top: 133px;
         width: 340px;
         height: 514px;
         background-color: var(--color-white);
         border-radius: 10px;
-        box-shadow: 
-            100px 0px var(--color-popup),
-            -100px 0 var(--color-popup),
-            0px 200px var(--color-popup),
-            0px -50px var(--color-popup);
         z-index: 20;
         padding: 0 15px;
     }
@@ -229,7 +219,7 @@ padding-top: 28px;}
             grid-template-columns: 15% 70% 15%;
             justify-items: center;
             align-items: center;
-            row-gap: 274px;
+            
             }
 
     .first_img {
@@ -799,5 +789,8 @@ padding-bottom: 20px;
 
 }
 
+    .close {
+    display: none;
+}
 
 
