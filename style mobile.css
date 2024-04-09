@@ -30,6 +30,12 @@
     padding: 0 10px;
     }
 
+ .noMobile, .open {
+  display: none;
+ 
+ 
+ }
+
 
 
 .blur {
@@ -58,6 +64,7 @@
 		z-index: 20;
 		text-align: center;
 		white-space: pre-line;
+        overflow: auto;
 	}
 
     .menu-block {
@@ -86,14 +93,10 @@
 	left: 14px;
 	}
 	
-	.proba {
-		position: absolute;
-		top: -44.3px;
-		left: 9px;
-	}
+
 	
 	.popup_inform {
-	position: absolute;
+	
 	bottom: 110px;
     left: 135px;
 	}

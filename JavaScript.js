@@ -1,4 +1,4 @@
-new Swiper('.swiper',{ 
+let slaider1 = new Swiper('.swiper',{ 
 
         pagination: {
         el: '.swiper-pagination',
@@ -71,7 +71,7 @@ document.querySelector('.phone').addEventListener("click", function () {
         document.getElementById("main").classList.add("blur");
         document.getElementById("menuList").classList.add("close");
         document.getElementById("menu_button").classList.remove("menu_open");
-        bodyTeg.setAttribute('style', 'overflow:none')
+        bodyTeg.setAttribute('style', 'overflow:hidden')
 
         
 });
@@ -100,7 +100,7 @@ menuLinks.forEach(hover__menu => hover__menu.addEventListener('click', function(
         closePopup();
 
 
-}))
+}));
 
 
 
@@ -109,7 +109,6 @@ menuLinks.forEach(hover__menu => hover__menu.addEventListener('click', function(
 
 
 
-/*
 let items = document.querySelectorAll('.item');
 let open = document.querySelector('.open');
 
@@ -117,7 +116,7 @@ open.addEventListener('click', function(evn) {
     evn.preventDefault();
 
     items.forEach(item => 
-        item.classList.toggle('hideItemLT'));
+        item.classList.toggle('hideItem'));
 
         items.forEach(item =>    
         item.classList.toggle('hideItemDT'));
@@ -127,5 +126,5 @@ open.addEventListener('click', function(evn) {
         
 
 
-});*/
+});
 

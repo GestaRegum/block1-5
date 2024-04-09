@@ -149,6 +149,7 @@ justify-content: center
     padding: 0;
     text-align: center;
     white-space: pre-line;
+    overflow: auto;
     
 	}
 .burger_menu {
@@ -158,7 +159,7 @@ justify-content: center
     }
 
 	.popup_inform {
-	position: absolute;
+
 	bottom: 89px;
 	left: 100px;
 	}
@@ -224,6 +225,11 @@ justify-content: center
     
    }
    
+   .first-block {
+   display: grid;
+   }
+
+
      .first_block_position {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -374,7 +380,7 @@ grid-row-start: 1;
 
 .gold {
     display: grid;
-    height: 731px;
+    height: 970px;
     background-color: var(--color-gold);
     border-radius: 10px;
     border: 1px solid white;
@@ -423,7 +429,7 @@ margin-bottom: 19px;
 
 
 
-.swiper {
+.swiper, .swiper_second {
     width: 100%;
     height: 110%;
   }
@@ -833,11 +839,37 @@ color: var(--color-white);
 padding-bottom: 20px;
 }
 
+	.noMobile {
+    display: grid;
+       display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 20px;
+    justify-items: center;
+		}
 
 
 
+	.hideItem:nth-child(n+3) {
+	margin: -10px;	
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity 2s;
+	height: 0;
+	transition-property: opacity, height, margin ;
+	transition-duration: 0.5s ;
+	transition-delay: 0.5s;
+	}
 
+	
 
+.open{
+    display: grid;
+    justify-content: center;
+    }
+
+	.rotate {
+        transform: rotate(180deg); 
+	   }
 
 
 
@@ -853,7 +885,7 @@ padding-bottom: 20px;
 	align-content: center;
 }
 
- .item  li {
+ .item li {
 	list-style: none;
     margin-bottom: 10px
 }
@@ -893,5 +925,11 @@ padding-bottom: 20px;
 	column-gap: 12px;
 }
 
+.first_sw{
+display: none;
+}
 
 }
+
+
+
