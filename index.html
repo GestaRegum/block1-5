@@ -52,7 +52,7 @@
                     
                     <li class="contact"><a href="#">info@millenium.ru</a></li>
                     <li class="contact"><a href="#">+7 (495) 792-66-69
-                        <span>пн-пт 10:00–19:00</span> </a></li>
+                        <span><p>пн-пт 10:00–19:00</p></span> </a></li>
                     
                 </ul>
                 
@@ -67,7 +67,7 @@
 
         <div class="feedback_call close"> <a class="feedback_call__button" href="#">Заказать звонок</a> </div>
 
-        <div class="order_a_call__form close" id="feedback_form">
+        <div class="order_a_call__form close closeDT" id="feedback_form">
         <div class="order_a_call__title">Заявка на консультацию</div>
 
         <label class="order_a_call__data">
@@ -186,37 +186,37 @@
 
 <div class="noMobile">
 
-<ul class="item hideItemLT hideItemDT">
+<ul class="item hideItem">
                 <li class="number">01</li>
                 <li class="slide-name">Удобный интерфейс</li>
                 <li class="under-line"></li>
                 <li class="slide-text">Блоковая подача информации, удобные кнопки, карточки товаров, понятное меню и легкая навигация по многостраничному сайту.</li>
             </ul>
-            <ul class="item hideItemLT hideItemDT">
+            <ul class="item hideItem">
                 <li class="number">02</li>
                 <li class="slide-name">Продающая структура</li>
                 <li class="under-line"></li>
                 <li class="slide-text">Делаем анализ вашей целевой аудитории и вашего предложения. Опираясь на анализ прописываем продающуюу структуру сайта.</li>
             </ul>
-            <ul class="item hideItemLT hideItemDT">
+            <ul class="item hideItem">
                 <li class="number">03</li>
                 <li class="slide-name">Адаптивность</li>
                 <li class="under-line"></li>
                 <li class="slide-text">Сайт корректно отображается на различных устройствах, элементы динамически подстраиваются под различные разрешения экрана, что повышает конверсию сайта в покупку.</li>
             </ul>
-            <ul class="item hideItemLT hideItemDT">
+            <ul class="item hideItem">
                 <li class="number">04</li>
                 <li class="slide-name">Уникальный дизайн</li>
                 <li class="under-line"></li>
                 <li class="slide-text">Не пользуемся шаблонными решениями. Под каждый проект разрабатывается индивидуальный дизайн который подчеркнет имидж компании.</li>
             </ul>
-            <ul class="item hideItemLT hideItemDT">
+            <ul class="item hideItem">
                 <li class="number">05</li>
                 <li class="slide-name">Защита и безопасность</li>
                 <li class="under-line"></li>
                 <li class="slide-text">Подключаем HTPS протокол, защиту от DDOS атак, чтобы данные клиентов были в безопасности.</li>
             </ul>
-            <ul class="item hideItemLT hideItemDT">
+            <ul class="item hideItem">
                 <li class="number">06</li>
                 <li class="slide-name">SEO оптимизация</li>
                 <li class="under-line"></li>
@@ -313,25 +313,40 @@
 
             <div class="trophy">
             <img class="trophyImg" src="img/gold.png"
-                                 srcset="img/gold.png 99w,
-                                        imgLaptop/gold.png 185w"
+                                    srcset="img/gold.png 99w,
+                                            imgLaptop/gold.png 185w,
+                                            imgDesktop/gold.png 350w"
 
-                                        sizes="(max-width: 768px) 98px,
-                                                (max-width: 1279px) 180px"   
-            
-            
-            
-            
-             alt="">
-            <div class="sertif">Сертификат</div>
+                                    sizes="(max-width: 768px) 98px,
+                                            (max-width: 1279px) 180px,
+                                            (min-width: 1278px) 350px"   
+                                    alt="">
+
+           
+            <figure>
+             <div class="sertif">Сертификат</div>
             <div class="sertifparner">Золотой сертифицированный партнер битрикс</div>
-            
-    <div class="swiper">
+            <img src="imgDesktop/sertif-1.png" alt="">
+            </figure>
+
+              <figure>
+             <div class="sertif">Сертификат</div>
+            <div class="sertifparner">Прграммы мониторинга качества внедрений</div>
+            <img src="imgDesktop/sertif-2.png" alt="">
+            </figure>
+
+
+
+
+
+    <div class="swiper second_sw">
         <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 
             <div class="swiper-slide swiper-slide_bk">
+            <div class="sertif">Сертификат</div>
+            <div class="sertifparner">Золотой сертифицированный партнер битрикс</div>
                 <img class="slideBG" src="img/sertif-1.png"
                                         srcset="img/sertif-1.png 280w,
                                         img/sertif-1.png 280w"
@@ -343,6 +358,8 @@
                 </div>
 
                 <div class="swiper-slide swiper-slide_bk">
+                <div class="sertif">Сертификат</div>
+            <div class="sertifparner">Прграммы мониторинга качества внедрений</div>
                 <img class="slideBG" src="img/sertif-2.png"
                                         srcset="img/sertif-2.png 280w,
                                         img/sertif-2.png 280w"

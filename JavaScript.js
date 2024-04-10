@@ -42,6 +42,7 @@ closePopup();
 window.addEventListener('keydown', (e) => {
         if (e.key === "Escape") {
                 closePopup();
+                document.querySelector('.header').classList.remove("blur");
 }
 });
 
@@ -103,11 +104,45 @@ menuLinks.forEach(hover__menu => hover__menu.addEventListener('click', function(
 }));
 
 
+/*окно запроса на декстопе*/
+
+document.querySelector('.feedback_call__button').addEventListener("click", function () {
+
+        document.getElementById("feedback_form").classList.remove("closeDT");
+        document.getElementById("main").classList.add("blur");
+       
+        document.getElementById("menuList").classList.add("close");
+        document.getElementById("menu_button").classList.remove("menu_open");
+        bodyTeg.setAttribute('style', 'overflow:hidden')
+
+        
+});
+
+let removeOrderDt = document.addEventListener('click', function(e) {
+
+        let callBackForm = document.querySelector('header');
+
+                if (!callBackForm.contains(e.target)) {
+                
+                        document.getElementById("feedback_form").classList.add("closeDT");
+                        document.getElementById("main").classList.remove("blur");
+                         bodyTeg.setAttribute('style', 'overflow:none')
+                         
+                }
+
+
+});
+
+
+document.removeEventListener('click', removeOrderDt);
 
 
 
 
 
+
+
+/*всплывающие окна блоков*/
 
 let items = document.querySelectorAll('.item');
 let open = document.querySelector('.open');
@@ -118,13 +153,5 @@ open.addEventListener('click', function(evn) {
     items.forEach(item => 
         item.classList.toggle('hideItem'));
 
-        items.forEach(item =>    
-        item.classList.toggle('hideItemDT'));
-
         open.classList.toggle('rotate'); 
-
-        
-
-
 });
-

@@ -31,9 +31,9 @@
 
 
    .blur {
-        filter: brightness(0.4) blur(1.5px);
-        background-color: rgba(163, 161, 161, 0.85);
-        opacity: 0.6;
+        
+        background-color: rgba(161, 161, 161, 0.85);
+        opacity: 0.9;
         }
 
 
@@ -926,6 +926,10 @@ padding-bottom: 20px;
 }
 
 .first_sw{
+display: none;
+}
+
+figure {
 display: none;
 }
 
