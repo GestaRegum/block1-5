@@ -16,15 +16,16 @@
     --color-popup: rgba(163, 161, 161, 0.85);
     --color-order_a_call: rgb(152, 149, 180);
     --color-order_a_call__name: rgb(126, 126, 126);
-
-
+    --color-box_shadow: rgba(0, 0, 0, 0.2);
     }
     
     body {
-   
+    display: grid;
 	font-family: 'Montserrat', sans-serif;
 	background-color: rgb(255, 255, 255);
-   
+    margin: 0 auto;
+    max-width: 769px;
+    justify-content: center;
     
    }
 
@@ -40,7 +41,8 @@
 
    main {
    display: grid;
-   margin-left: 10px;
+   margin: 0 10px;
+       justify-items: center;
    }
 
    .order_a_call__form {
@@ -85,10 +87,12 @@ font-weight: 500;
     border-bottom: 2px solid var(--color-order_a_call);
 }
 
-.order_a_call__name::placeholder, .order_a_call__name::placeholder {
+.order_a_call__name::placeholder, .order_a_call__phoneNumber::placeholder {
 color: var(--color-order_a_call);
 
 }
+
+
 
 
 .order_a_call__data, .order_a_call__data form {
@@ -96,6 +100,7 @@ color: var(--color-order_a_call);
     row-gap: 15px;    
     padding-left: 30px;
 }
+
 .order_a_call__send {
     display: grid;
     justify-content: center;
@@ -140,9 +145,10 @@ justify-content: center
     background: white;
 	width: 360px;
     list-style: none;
-    box-shadow: 360px 0 rgba(163, 161, 161, 0.85),
-	720px 0 rgba(163, 161, 161, 0.85),
-	1080px 0 rgba(163, 161, 161, 0.85);
+    box-shadow: 360px 0 var(--color-box_shadow),
+	720px 0 var(--color-box_shadow),
+    -360px 0 var(--color-box_shadow),
+	1080px 0 var(--color-box_shadow);
 	height: 100vh;
     z-index: 10;
     margin-left: -68px;
@@ -152,11 +158,19 @@ justify-content: center
     overflow: auto;
     
 	}
-.burger_menu {
-    position: absolute;
-    margin-top: -43px;
-    margin-left: -133px;
+
+       .menu_open {
+    display: block;
+    width: 0;
+    visibility: hidden;
     }
+
+ .burger_menu {
+        position: absolute;
+        transform: translate(-20px, -51px);
+
+    }
+  
 
 	.popup_inform {
 
@@ -630,12 +644,18 @@ display: grid;
     }
 
     .input {
-    display: grid;
-    
+        display: grid;
         background-color: var(--color-callBackForm);
         border: none;
         border-bottom: 2px solid rgba(255, 255, 255, 0.4);
     }
+
+.input::placeholder {
+color: var(--color-blue);
+}
+
+
+
 
     .button {
        display: grid;
@@ -841,9 +861,8 @@ padding-bottom: 20px;
 
 	.noMobile {
     display: grid;
-       display: grid;
     grid-template-columns: 50% 50%;
-    row-gap: 20px;
+    gap: 20px;
     justify-items: center;
 		}
 

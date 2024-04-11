@@ -15,7 +15,7 @@
     --color-popup: rgba(163, 161, 161, 0.85);
     --color-order_a_call: rgb(152, 149, 180);
     --color-order_a_call__name: rgb(126, 126, 126);
-
+    --color-box_shadow: rgba(0, 0, 0, 0.2);
     }
     
     body {
@@ -62,6 +62,8 @@
 		width: 340px;
 		height: 100vh;
 		z-index: 20;
+         box-shadow: 380px 0 var(--color-box_shadow),
+	    790px 0 var(--color-box_shadow);
 		text-align: center;
 		white-space: pre-line;
         overflow: auto;
@@ -80,10 +82,10 @@
     width: 0;
     visibility: hidden;
     }
+
     .burger_menu {
         position: absolute;
-        top: 20px;
-        left: 8px;
+        transform: translate(37px, 19px);
     }
   
 	
@@ -603,6 +605,11 @@ margin-bottom: 19px;
         border: none;
         border-bottom: 2px solid rgba(255, 255, 255, 0.4);
     }
+
+.input::placeholder {
+color: var(--color-blue);
+}
+
 
     .button {
        display: grid;

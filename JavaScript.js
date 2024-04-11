@@ -23,7 +23,7 @@ let closePopup = function() {
 
         document.getElementById("menu_button").classList.add("menu_open");
         document.getElementById("menuList").classList.remove("close");
-        document.getElementById("main").classList.add("blur");
+       
         document.getElementById("feedback_form").classList.add("close");
         bodyTeg.setAttribute('style', 'overflow:hidden')
 
