@@ -22,15 +22,15 @@
     display: grid;
 	font-family: 'Montserrat', sans-serif;
 	background-color: var(--color-white);
-   
-
+    max-width: 700px;
+    margin: 0 auto;
 }
     main {
     display: grid;
     padding: 0 10px;
     }
 
- .noMobile, .open {
+ .prime-block-for-ltdc, .prime-block_open {
   display: none;
  
  
@@ -44,7 +44,7 @@
         opacity: 0.6;
         }
 
-        .popup_menu {
+        .header-popup-menu {
         position: absolute;
         left: 0px;
         top: 0;
@@ -52,7 +52,7 @@
 
 
 
-   .popup_menu .menu__list{
+   .header-popup-menu .header-menu__list{
 		
 		position: absolute;
 		top: 45px;
@@ -83,19 +83,27 @@
     visibility: hidden;
     }
 
-    .burger_menu {
+    .header-popap-menu-icon_open {
         position: absolute;
         transform: translate(37px, 19px);
     }
   
 	
 
-	.x {
+	.header-menu-close_x {
 	position: absolute;
 	left: 14px;
 	}
 	
+    .second-block {
+    display: grid;
+    }
 
+.second-block__conteiner {
+display: grid;
+justify-items: center;
+
+}
 	
 	.popup_inform {
 	
@@ -103,29 +111,29 @@
     left: 135px;
 	}
 	
-.hover__menu {
+.header__menu-link {
 padding-top: 28px;}
 
 
-	.hover__menu a{
+	.header__menu-link a{
 		padding:  5px 0;
 		color: rgb(42, 35, 103);	
 		font-weight: 700;
 		
 		}
 
-	.contact a{
+	.header__menu-contact a{
 		position: relative;
 		color: rgb(107, 90, 249);
 		font-weight: 700;
 		}
 		
-	.menu__list_close{
+	.header-menu__list_close{
 		display: none;
 		
 	}
 
-    .intShop {
+    .prime-title {
     display: none;
     }
 
@@ -227,38 +235,38 @@ padding-top: 28px;}
             
             }
 
-    .first_img {
+    .first-block__container_img {
     display: grid;
     justify-content: center;
     }        
 
-.heading{
+.first-block__heading{
    
     font-size: 18px;
     font-weight: 700;
     color: var(--color-blue);
 }
-.heading span {
+.first-block__heading span {
     color: var(--color-lightBlue);
 }
 
-.marketing {
+.first-block__container_title_text {
     font-size: 12px;
     font-weight: 400;
     color: var(--color-blue);
 
 }
-.marketing span {
+.first-block__container_title_text span {
     color: var(--color-lightBlue);
     font-weight: 700;
 }
 
-.price {
+.first-block_button {
     display: grid;
     justify-content: center;
     
 }
-.price_m {
+.price-button_position {
     display: grid;
     justify-content: center;
     margin-top: 50px;
@@ -277,7 +285,7 @@ padding-top: 28px;}
     text-decoration: none;
 }
 
-.first-block__container {
+.first-block__container_text {
     font-size: 12px;
     font-weight: 500;
     color: var(--color-blue);
@@ -285,7 +293,7 @@ padding-top: 28px;}
     margin-top: 10px;
 }
 
-.first-block__container span {
+.first-block__container_text span {
 color: var(--color-lightBlue);
 }
 
@@ -344,24 +352,24 @@ color: var(--color-lightBlue);
   }
 
 
-  .question {
+  .second-block_title {
     margin-top: 25px;
     font-size: 18px;
     font-weight: 800;
     color: var(--color-blue);
   }
 
-  .question span {
+  .second-block_title span {
     color: var(--color-lightBlue);
   }
 
-  .questionImg, .orderImg, .integrationImg, .crmImg, .bisnesImg, .stageImg{
+  .second-block__img, .fourth-block__img, .fifth-block__img{
     display: grid;
     justify-content: center;    
   }
 
 
-  .product-catalog, .order_registration, .integration, .CRM {
+  .second-block__conteiner-title {
     display: grid;
     row-gap: 17px;
     font-size: 18px;
@@ -370,7 +378,7 @@ color: var(--color-lightBlue);
    
   }
 
-  .product, .design_options, .integration_options, .CRM_options {
+  .second-block__conteiner-text {
     display: grid;
     font-size: 12px;
     font-weight: 400;
@@ -378,7 +386,7 @@ color: var(--color-lightBlue);
     list-style-image: url(img/li.png);
     row-gap: 10px;
   }
-  .border {
+  .third-block {
     margin-top: 80px;
     margin-bottom: 107px;
     padding: 19px;
@@ -386,7 +394,7 @@ color: var(--color-lightBlue);
     border-radius: 10px;
   }
 
-.gold {
+.third-block__frame {
     display: grid;
     height: 731px;
     background-color: var(--color-gold);
@@ -400,19 +408,19 @@ color: var(--color-lightBlue);
 
 }
 
-.trophyImg {
+.third-block__img {
 display: grid;
 margin-bottom: 19px;
 }
 
-    .trophy {
+    .third-block__conteiner {
         display: grid;
         justify-items: center;
         margin-top: 38px;
         
     }
    
-   .sertif {
+   .third-block__img_sertif {
     display: grid;
     font-size: 12px;
     font-weight: 700;
@@ -421,7 +429,7 @@ margin-bottom: 19px;
     }
 
 
-    .sertifparner{
+    .third-block__img_text{
         display: grid;
         width: 212px;
         text-align: center;
@@ -435,36 +443,36 @@ margin-bottom: 19px;
         background-color: var(--color-gold);
     }
 
-.bisnes_conteiner {
+.fourth-block__text {
     display: grid;
     font-size: 12px;
     font-weight: 400;
     color: var(--color-blue);
 }
 
-.bisnes {
+.fourth-block__title {
     margin-bottom: 30px;
     font-size: 18px;
     font-weight: 800;
     color: var(--color-blue);
   }
 
-  .bisnes span {
+  .fourth-block__title span {
     color: var(--color-lightBlue);
   }
 
-  .second_block {
+  .fifth-block {
   display: grid;
   gap: 50px;
   }
 
-  .second_block_title {
+  .fifth-block__title {
   font-size: 18px;
   font-weight: 800;
   color: var(--color-blue);
   }
 
-  .stages {
+  .fifth-block__stages {
       display: grid;
       justify-content: center;
       box-shadow: 0 10px 60px 0 var(--color-block);
@@ -476,12 +484,12 @@ margin-bottom: 19px;
 
 
 
-  .stage {
+  .fifth-block__stage {
       display: grid;
       justify-content: center;
   }
 
-  .stage_title {
+  .fifth-block__stage-title {
     display: grid;
     grid-template-columns: 1fr 6fr;
     align-content: center;
@@ -501,7 +509,7 @@ margin-bottom: 19px;
     border-radius: 50%;
   }
 
-    .stage_title_text {
+    .fifth-block__stage-text {
         display: grid;
         align-content: center;
         font-size: 12px;
@@ -509,20 +517,20 @@ margin-bottom: 19px;
         color: var(--color-blue);
     }
 
-    .stage_under_line {
+    .fifth-block__stage-line {
         margin-top: 35px;
         display: grid;
         border-bottom: 1px solid var(--color-under) ;
     }
 
-    .stage_content {
+    .fifth-block__stage-content {
         display: grid;
         color: var(--color-blue);
         font-size: 12px;
         font-weight: 400;
     }
 
-    .office {
+    .under-fifth-block {
     margin-top: 90px;
    background: url(img/office.png) no-repeat;
    background-size: contain;

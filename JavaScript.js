@@ -6,13 +6,13 @@ let slaider1 = new Swiper('.swiper',{
         });
 
 
-let menuOpen = document.getElementById("menu_button");
-let menuLinks = document.querySelectorAll('.hover__menu>a');
+let menuOpen = document.getElementById("header-menu_button");
+let menuLinks = document.querySelectorAll('.header__menu-link>a');
 let bodyTeg = document.body;
 
 let closePopup = function() {
-     document.getElementById("menu_button").classList.remove("menu_open");
-        document.getElementById("menuList").classList.add("close");
+     document.getElementById("header-menu_button").classList.remove("menu_open");
+        document.getElementById("header-menuList").classList.add("close");
         document.getElementById("main").classList.remove("blur");
         bodyTeg.setAttribute('style', 'overflow:none')
 };
@@ -21,8 +21,8 @@ let closePopup = function() {
 /*Открываем меню*/
  let openMenuList = menuOpen.addEventListener("click", function() {
 
-        document.getElementById("menu_button").classList.add("menu_open");
-        document.getElementById("menuList").classList.remove("close");
+        document.getElementById("header-menu_button").classList.add("menu_open");
+        document.getElementById("header-menuList").classList.remove("close");
        
         document.getElementById("feedback_form").classList.add("close");
         bodyTeg.setAttribute('style', 'overflow:hidden')
@@ -31,7 +31,7 @@ let closePopup = function() {
 
 
 /*Закрываем меню нажимая на крестик*/
-document.querySelector('.x').addEventListener("click", function() {
+document.querySelector('.header-menu-close_x').addEventListener("click", function() {
 closePopup();
    
 });
@@ -48,13 +48,13 @@ window.addEventListener('keydown', (e) => {
 
 
 
-let removeMenuList = document.addEventListener('click', function(e) {
+let removemenuList = document.addEventListener('click', function(e) {
 
         let header = document.querySelector('.header');
 
         if (!header.contains(e.target)) {
-                document.getElementById("menu_button").classList.remove("menu_open");
-                document.getElementById("menuList").classList.add("close");
+                document.getElementById("header-menu_button").classList.remove("menu_open");
+                document.getElementById("header-menuList").classList.add("close");
                 document.getElementById("main").classList.remove("blur");
               
         }
@@ -66,12 +66,12 @@ let removeMenuList = document.addEventListener('click', function(e) {
 
 /*вызываем окно запроса звонка*/
  
-document.querySelector('.phone').addEventListener("click", function () {
+document.querySelector('.header-phone').addEventListener("click", function () {
 
         document.getElementById("feedback_form").classList.remove("close");
         document.getElementById("main").classList.add("blur");
-        document.getElementById("menuList").classList.add("close");
-        document.getElementById("menu_button").classList.remove("menu_open");
+        document.getElementById("header-menuList").classList.add("close");
+        document.getElementById("header-menu_button").classList.remove("menu_open");
         bodyTeg.setAttribute('style', 'overflow:hidden')
 
         
@@ -96,7 +96,7 @@ document.removeEventListener('click', removeOrder);
 
 
 
-menuLinks.forEach(hover__menu => hover__menu.addEventListener('click', function() {
+menuLinks.forEach(header__menulink => header__menulink.addEventListener('click', function() {
 
         closePopup();
 
@@ -111,8 +111,8 @@ document.querySelector('.feedback_call__button').addEventListener("click", funct
         document.getElementById("feedback_form").classList.remove("closeDT");
         document.getElementById("main").classList.add("blur");
        
-        document.getElementById("menuList").classList.add("close");
-        document.getElementById("menu_button").classList.remove("menu_open");
+        document.getElementById("header-menuList").classList.add("close");
+        document.getElementById("header-menu_button").classList.remove("menu_open");
         bodyTeg.setAttribute('style', 'overflow:hidden')
 
         
@@ -145,7 +145,7 @@ document.removeEventListener('click', removeOrderDt);
 /*всплывающие окна блоков*/
 
 let items = document.querySelectorAll('.item');
-let open = document.querySelector('.open');
+let open = document.querySelector('.prime-block_open');
 
 open.addEventListener('click', function(evn) {
     evn.preventDefault();
