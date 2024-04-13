@@ -19,7 +19,32 @@
 </head>
 
 <body>
+<div class="order_a_call__form_background close">
+    <div>
+    <div class="order_a_call__form close closeDT" id="feedback_form">
+        <div class="order_a_call__title">Заявка на консультацию</div>
+
+        <label class="order_a_call__data">
+        <form>
+        <div class="input_name">Ваше имя</div>
+        <input class="order_a_call__name" type="text" placeholder="Введите ваше имя" >
+        <div class="input_phoneNumber">Номер телефона</div>
+        <input class="order_a_call__phoneNumber" type="text" placeholder="+ 7 (999) 999 99 99" >
+        </form>
+        <div class="order_a_call__send"> <a class="order_a_call__send_button" href="#">Отправить</a> </div>
+        </label>
+        
+        <div class="approval">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку
+         персональных данных и соглашаюсь c политикой конфиденциальности</div>
+
+            <div class="imgOrderOfCall"><img src="img/order of call.png" alt=""></div>
+
+
+        </div>
+        </div>
+</div>
     <header class="header">
+    <div class="block-header">
        <a href="#" class="" id="header-menu_button"><img src="img/menu.png" alt="меню"></a>
         <div class="header-logo"><a href="#"><img src="img/Logo.png"
                     srcset="img/Logo.png 114w,
@@ -38,6 +63,8 @@
                     imgLaptop/phoneLT.png 62w"
                     sizes="(max-width: 768px) 52px,
                     (max-width: 1279px) 62px" alt=""></a></div>
+
+</div>
 
 
    <div class="header-popup-menu close" id="header-menuList"><a class=".header-menu-nav" href="#"> <img class="header-popap-menu-icon_open" src="img/popup_menu.png" alt="menu"> </a>
@@ -70,26 +97,7 @@
 
         <div class="feedback_call close"> <a class="feedback_call__button" href="#">Заказать звонок</a> </div>
 
-        <div class="order_a_call__form close closeDT" id="feedback_form">
-        <div class="order_a_call__title">Заявка на консультацию</div>
-
-        <label class="order_a_call__data">
-        <form>
-        <div class="input_name">Ваше имя</div>
-        <input class="order_a_call__name" type="text" placeholder="Введите ваше имя" >
-        <div class="input_phoneNumber">Номер телефона</div>
-        <input class="order_a_call__phoneNumber" type="text" placeholder="+ 7 (999) 999 99 99" >
-        </form>
-        <div class="order_a_call__send"> <a class="order_a_call__send_button" href="#">Отправить</a> </div>
-        </label>
-        
-        <div class="approval">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку
-         персональных данных и соглашаюсь c политикой конфиденциальности</div>
-
-            <div class="imgOrderOfCall"><img src="img/order of call.png" alt=""></div>
-
-
-        </div>
+       
 
         
 
@@ -102,8 +110,8 @@
 
 <main class="" id="main">
 
-
-<article class="first-block">
+<div class="block-for-information">
+<section class="first-block">
 <div class="first-block__heading">Разработка интернет-магазинов <span>на 1C-Битрикс</span></div>
 <div class="first-block__container"><div class="first-block__container_img"><img src="img/background_img_first.png"
                             srcset="img/background_img_first.png 360w,
@@ -122,15 +130,15 @@
 <div class="first-block__container_text"><span>Оставьте заявку и получите бесплатную консультацию от специалиста, полный расчет стоимости разработки и бонус:</span>  «15 сервисов которые покажут стратегию продвижения конкурентов, всё об их выдаче в поиске и не только»</div>
 </div></div>
 
-</article>
+</section>
+</div>
 
 
 
 
 
 
-
-
+<div class="block-for-information">
 <div class="swiper first_sw">
     <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -193,9 +201,11 @@
          <!-- If we need pagination -->
          <div class="swiper-pagination"></div>
    </div>
+</div>
 
 
-<article class="prime"> 
+<div class="block-for-information">
+<section class="prime"> 
 <div class="prime-title" id="primeTitle">Мы создаем интернет-магазины,<span> которые продают</span></div>
 
 <div class="prime-block-for-ltdc">
@@ -248,13 +258,13 @@
 
 <div class="price-button_position"> <a class="price-button" href="#">Узнать стоимость</a> </div>
 
-</article>  
+</section>  
+
+</div>
 
 
-
-
-
-<article class="second-block">
+<div class="block-for-information">
+<section class="second-block">
 
 
 <div class="second-block_title" id="what_do_you_get"> Что вы <span>получаете ?</span></div>
@@ -340,12 +350,12 @@
 
 <div class="price-button_position"> <a class="price-button" href="#">Узнать стоимость</a> </div>
 
-</article>
+</section>
+</div>
 
 
-
-
-<article class="third-block">
+<div class="block-for-information">
+<section class="third-block">
 
 <div class="third-block__frame">
 
@@ -416,9 +426,12 @@
     </div>
     </div>
     </div>                 
-</article>
-            
-<article class="fourth-block" id="exploring_the_business">
+</section>
+</div>
+
+
+<div class="block-for-information">
+<section class="fourth-block" id="exploring_the_business">
         <div class="fourth-block__title">Исследуем <span>бизнес</span></div>
 
         <div class="fourth-block__text">
@@ -447,10 +460,13 @@
                                             (min-width: 1280px) 600px"
 
         alt=""></div>
-</article>
+</section>
+</div>
 
 
-<div class="fifth-block">
+
+<div class="block-for-information">
+<section class="fifth-block">
 <p class="fifth-block__title" id="stages">Этапы</p>
 
 <div class="fifth-block__stages">
@@ -603,9 +619,15 @@
     </div>
     
 </div>
+</section>
 </div>
 
-<div class="under-fifth-block"></div>
+
+
+
+<div class="block-for-img">
+<div class="imageOffice"></div>
+</div>
 
 
 
@@ -613,9 +635,8 @@
 
 
 
-
-
-<div class="callback" id="contacts"> <div><p class="callback_title">Компания Millenium-</p>
+<div class="block-for-information">
+<section class="callback" id="contacts"> <p class="callback_title">Компания Millenium-</p>
 <div class="callback__description">
 <p>Это дорогая и долгая разработка интернет-магазинов на 1С
  Битрикс! Нельзя сделать <span> качественный</span> цифровой продукт за
@@ -626,7 +647,7 @@
    контент и товары. Работы по созданию интернет-магазина с нуля 
    ведутся только после анализа ниши бизнеса.</p>
 </div>
-</div>
+
 
 
 <div class="form__callBack" id="feedback">
@@ -654,13 +675,7 @@
             <span class="check__box"></span>
             <span class="check__text">Cогласен/а на</span><span>  обработку персональных данных</span>
     </label>
-    
-    </div>
-    
- 
-    </div>
-
-    <img class="cube" src="img/Cube.png"
+     <img class="cube" src="img/Cube.png"
                         srcset="img/Cube.png 80w,
                                             imgLaptop/Cube_LT.png 119w,
                                             imgDesktop/Cube_DT.png 142w"
@@ -685,8 +700,6 @@
                                             (max-width: 1279px) 335px,
                                             (min-width: 1280px) 430px" 
                                              alt="">
-
-
     <img class="platonic" src="img/Platonic.png" 
                                 srcset="img/Platonic.png 119w,
                                             imgLaptop/Platonic_LT.png 146w,
@@ -696,8 +709,6 @@
                                             (min-width: 1280px) 146px" 
     
     alt="">
-
-
     <img class="donut" src="img/donut.png"
                         srcset="img/donut.png 42w,
                          imgDesktop/donut_DT.png 58w"
@@ -705,8 +716,16 @@
                                 (min-width: 1280px) 58px" 
                                              alt="">
 
-   
+
+    </div>
+    
+ 
+    </section>
 </div>
+   
+
+   
+
 
 </main>
 

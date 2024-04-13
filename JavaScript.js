@@ -13,8 +13,8 @@ let bodyTeg = document.body;
 let closePopup = function() {
      document.getElementById("header-menu_button").classList.remove("menu_open");
         document.getElementById("header-menuList").classList.add("close");
-        document.getElementById("main").classList.remove("blur");
         bodyTeg.setAttribute('style', 'overflow:none')
+       document.querySelector('.order_a_call__form_background').classList.add('close')
 };
 
    
@@ -69,10 +69,12 @@ let removemenuList = document.addEventListener('click', function(e) {
 document.querySelector('.header-phone').addEventListener("click", function () {
 
         document.getElementById("feedback_form").classList.remove("close");
-        document.getElementById("main").classList.add("blur");
         document.getElementById("header-menuList").classList.add("close");
         document.getElementById("header-menu_button").classList.remove("menu_open");
-        bodyTeg.setAttribute('style', 'overflow:hidden')
+        bodyTeg.setAttribute('style', 'overflow:hidden');
+        document.querySelector('.order_a_call__form_background').classList.remove('close')
+
+
 
         
 });
@@ -82,7 +84,8 @@ let removeOrder = document.addEventListener('click', function(e) {
         let callBackForm = document.querySelector('header');
 
                 if (!callBackForm.contains(e.target)) {
-                
+                        document.querySelector('.order_a_call__form_background').classList.add('close')
+
                         document.getElementById("feedback_form").classList.add("close");
                         document.getElementById("main").classList.remove("blur");
                          bodyTeg.setAttribute('style', 'overflow:none')
@@ -109,11 +112,10 @@ menuLinks.forEach(header__menulink => header__menulink.addEventListener('click',
 document.querySelector('.feedback_call__button').addEventListener("click", function () {
 
         document.getElementById("feedback_form").classList.remove("closeDT");
-        document.getElementById("main").classList.add("blur");
-       
         document.getElementById("header-menuList").classList.add("close");
         document.getElementById("header-menu_button").classList.remove("menu_open");
         bodyTeg.setAttribute('style', 'overflow:hidden')
+        document.querySelector('.order_a_call__form_background').classList.remove('close')
 
         
 });
